@@ -1,0 +1,111 @@
+.layout-wrapper {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .layout-wrapper header, .layout-wrapper footer, .layout-wrapper .main-content, .layout-wrapper .sidebar {
+    position: relative;
+    background-color: #e9e9f4;
+    margin-bottom: 10px;
+  }
+
+  .layout-wrapper header, .layout-wrapper footer {
+    display: block;
+    clear: both;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 4vw;
+    flex-wrap: wrap;
+  }
+
+  .layout-wrapper header {
+    display: flex;
+    align-items: center;
+    padding: 15px 4vw;
+  }
+
+  .layout-wrapper header .logo {
+    font-weight: 600;
+    color: #333;
+    font-size: 48px;
+    margin-right: auto;
+  }
+
+  .layout-wrapper .layout-header-menu, .layout-wrapper .layout-footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+
+  .layout-wrapper .layout-header-menu a, .layout-wrapper .layout-footer-menu a {
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 15px;
+    font-weight: 600;
+  }
+
+  .layout-wrapper footer {
+    font-size: 12px;
+    flex-direction: column;
+  }
+
+  .layout-wrapper .sidebar {
+    width: 250px;
+    float: left;
+    padding: 20px;
+    min-height: 450px;
+  }
+
+  .layout-wrapper .sidebar-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .layout-wrapper .sidebar-menu a {
+    font-size: 14px;
+    color: #222;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+  }
+
+  .layout-wrapper .main-content {
+    width: calc(100% - 260px);
+    margin-left: 10px;
+    float: left;
+    padding: 20px;
+    min-height: 450px;
+  }
+
+  .layout-wrapper .main-content title {
+    margin: 25px 0;
+  }
+
+  .layout-wrapper .main-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .layout-wrapper .btn-link {
+    background-color: #e7024e;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 8px 20px;
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .layout-wrapper .main-content, .layout-wrapper .sidebar {
+      width: 100%;
+      float: none;
+      min-height: 0;
+    }
+  }
